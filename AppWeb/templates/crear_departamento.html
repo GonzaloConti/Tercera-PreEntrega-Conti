@@ -1,0 +1,18 @@
+{% extends 'padre.html'%}
+
+{% block titulo %}
+    Aquí puede crear un departamento perteneciente a la empresa
+{% endblock %}
+
+{% block parrafo %}
+
+<form action="" method="post"> {% csrf_token %}
+
+    
+    {{formu_departamento}}
+
+    <input type="submit">
+
+</form>
+
+{% endblock %}

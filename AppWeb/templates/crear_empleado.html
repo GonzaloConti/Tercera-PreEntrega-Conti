@@ -1,0 +1,18 @@
+{% extends 'padre.html'%}
+
+{% block titulo %}
+    Aquí puede dar de alta un empleado de la empresa
+{% endblock %}
+
+{% block parrafo %}
+
+<form action="" method="post"> {% csrf_token %}
+
+    
+    {{formu}}
+
+    <input type="submit" value = "Guardar">
+
+</form>
+
+{% endblock %}

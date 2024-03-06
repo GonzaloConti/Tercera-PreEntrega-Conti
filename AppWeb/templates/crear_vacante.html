@@ -1,0 +1,21 @@
+{% extends 'padre.html'%}
+
+{% block titulo %}
+    Aquí puede crear una vacante para un departamento de la empresa
+{% endblock %}
+
+{% block parrafo %}
+
+<form action="" method="post"> {% csrf_token %}
+
+    
+    <p> Titulo:  <input type="text" name="caja_de_nombre"> </p>
+    <p> Descripcion: <input type="text" name="caja_de_descripcion" > </p>
+    <p> Requisitos: <input type="text" name="caja_de_requisitos" > </p>
+    <p> Salario: <input type="number" name="caja_de_salario" > </p>
+
+    <input type="submit">
+
+</form>
+
+{% endblock %}
